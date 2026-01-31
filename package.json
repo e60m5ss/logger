@@ -19,7 +19,6 @@
         "build": "tsup",
         "format": "prettier ./src --write --ignore-path=.prettierignore",
         "lint": "tsc --noEmit; prettier ./src --check --ignore-path=.prettierignore",
-        "postpublish": "rimraf ./dist",
         "prepublish": "tsup"
     },
     "prettier": {
