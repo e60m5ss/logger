@@ -1,0 +1,35 @@
+{
+    "name": "@wlix/logger",
+    "description": "Tiny file-based logging for Node.js projects",
+    "version": "2.0.0",
+    "author": {
+        "name": "e60m5ss",
+        "url": "https://github.com/e60m5ss"
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "build": "tsup",
+        "format": "prettier ./src --write --ignore-path=.prettierignore",
+        "lint": "tsc --noEmit; prettier ./src --check --ignore-path=.prettierignore",
+        "postpublish": "rimraf ./dist",
+        "prepublish": "tsup"
+    },
+    "prettier": {
+        "filepath": "src/**/*.ts",
+        "jsxSingleQuote": false,
+        "printWidth": 85,
+        "semi": true,
+        "singleQuote": false,
+        "tabWidth": 4,
+        "trailingComma": "es5",
+        "useTabs": false
+    },
+    "devDependencies": {
+        "@types/node": "^25.1.0",
+        "prettier": "^3.8.1",
+        "tsup": "^8.5.1",
+        "typescript": "^5.9.3"
+    }
+}
