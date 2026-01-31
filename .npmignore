@@ -1,0 +1,8 @@
+**/*.DS_Store*
+**/*.env*
+.gitignore
+.prettierignore
+node_modules/
+src/
+tsconfig.json
+tsup.config.ts
