@@ -140,7 +140,7 @@ export class Logger {
      */
     public log(
         message: string,
-        options?: WriteOptions & { level?: string }
+        options?: Omit<WriteOptions, "message"> & { level?: string }
     ): Logger {
         if (!message) {
             throw new Error("Logging requires a message");
