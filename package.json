@@ -6,6 +6,13 @@
         "name": "e60m5ss",
         "url": "https://github.com/e60m5ss"
     },
+    "keywords": [
+        "files",
+        "fs",
+        "logger",
+        "logging",
+        "logs"
+    ],
     "main": "./dist/index.cjs",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.mts",
